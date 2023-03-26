@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5642C57CEC7351A78843FE /* Pods_ChatGPT_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA32346BBCA81502DAFFFA95 /* Pods_ChatGPT_Swift.framework */; };
+		FA78F4BB29CA2C2000DA513F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F4BA29CA2C2000DA513F /* AppDelegate.swift */; };
+		FA78F4BD29CA2C2000DA513F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F4BC29CA2C2000DA513F /* SceneDelegate.swift */; };
+		FA78F4BF29CA2C2000DA513F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F4BE29CA2C2000DA513F /* ViewController.swift */; };
+		FA78F4C229CA2C2000DA513F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA78F4C029CA2C2000DA513F /* Main.storyboard */; };
+		FA78F4C429CA2C2300DA513F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78F4C329CA2C2300DA513F /* Assets.xcassets */; };
+		FA78F4C729CA2C2300DA513F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA78F4C529CA2C2300DA513F /* LaunchScreen.storyboard */; };
+		FA78F4CF29CA35D500DA513F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA78F4CE29CA35D500DA513F /* Colors.xcassets */; };
+		FA78F4D229CA3D9F00DA513F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F4D129CA3D9F00DA513F /* UIViewExtension.swift */; };
+		FA78F4D729CCC4AA00DA513F /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78F4D529CCC4AA00DA513F /* ChatCell.swift */; };
+		FA78F4D829CCC4AA00DA513F /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA78F4D629CCC4AA00DA513F /* ChatCell.xib */; };
+		FACB353D29CF833E00AEA8C5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB353C29CF833E00AEA8C5 /* ChatVC.swift */; };
+		FACB353F29CF834E00AEA8C5 /* ChatVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB353E29CF834E00AEA8C5 /* ChatVM.swift */; };
+		FACB354129CF92B200AEA8C5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB354029CF92B200AEA8C5 /* UIViewControllerExtension.swift */; };
+		FACB354529CFB66F00AEA8C5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB354429CFB66F00AEA8C5 /* ServiceManager.swift */; };
+		FACB354829CFCCB000AEA8C5 /* ChatGptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB354729CFCCB000AEA8C5 /* ChatGptModel.swift */; };
+		FACB354A29CFD2CF00AEA8C5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB354929CFD2CF00AEA8C5 /* UIButtonExtension.swift */; };
+		FACB354C29D0627200AEA8C5 /* UserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB354B29D0627200AEA8C5 /* UserDefault+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B99030393771D670297CC07 /* Pods-ChatGPT-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT-Swift.release.xcconfig"; path = "Target Support Files/Pods-ChatGPT-Swift/Pods-ChatGPT-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		43B7A31B6236B6BD47B50614 /* Pods-ChatGPT-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT-Swift.debug.xcconfig"; path = "Target Support Files/Pods-ChatGPT-Swift/Pods-ChatGPT-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		EA32346BBCA81502DAFFFA95 /* Pods_ChatGPT_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatGPT_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA78F4B729CA2C2000DA513F /* ChatGPT-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA78F4BA29CA2C2000DA513F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA78F4BC29CA2C2000DA513F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA78F4BE29CA2C2000DA513F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA78F4C129CA2C2000DA513F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA78F4C329CA2C2300DA513F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA78F4C629CA2C2300DA513F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA78F4C829CA2C2300DA513F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA78F4CE29CA35D500DA513F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FA78F4D129CA3D9F00DA513F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FA78F4D529CCC4AA00DA513F /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		FA78F4D629CCC4AA00DA513F /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		FACB353C29CF833E00AEA8C5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		FACB353E29CF834E00AEA8C5 /* ChatVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVM.swift; sourceTree = "<group>"; };
+		FACB354029CF92B200AEA8C5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		FACB354429CFB66F00AEA8C5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		FACB354729CFCCB000AEA8C5 /* ChatGptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGptModel.swift; sourceTree = "<group>"; };
+		FACB354929CFD2CF00AEA8C5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FACB354B29D0627200AEA8C5 /* UserDefault+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA78F4B429CA2C2000DA513F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5642C57CEC7351A78843FE /* Pods_ChatGPT_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B45D43F7960C95826E9DBB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43B7A31B6236B6BD47B50614 /* Pods-ChatGPT-Swift.debug.xcconfig */,
+				0B99030393771D670297CC07 /* Pods-ChatGPT-Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA3927E7A2DBF168FCFCE7E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA32346BBCA81502DAFFFA95 /* Pods_ChatGPT_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA78F4AE29CA2C2000DA513F = {
+			isa = PBXGroup;
+			children = (
+				FA78F4B929CA2C2000DA513F /* ChatGPT-Swift */,
+				FA78F4B829CA2C2000DA513F /* Products */,
+				6B45D43F7960C95826E9DBB4 /* Pods */,
+				DA3927E7A2DBF168FCFCE7E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA78F4B829CA2C2000DA513F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA78F4B729CA2C2000DA513F /* ChatGPT-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA78F4B929CA2C2000DA513F /* ChatGPT-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				FACB354629CFCC9700AEA8C5 /* Models */,
+				FACB353B29CF805C00AEA8C5 /* ViewModels */,
+				FACB353A29CF805100AEA8C5 /* ViewControllers */,
+				FA78F4D029CA3D8B00DA513F /* Utilities */,
+				FA78F4D329CA460300DA513F /* Views */,
+				FA78F4BA29CA2C2000DA513F /* AppDelegate.swift */,
+				FA78F4BC29CA2C2000DA513F /* SceneDelegate.swift */,
+				FA78F4BE29CA2C2000DA513F /* ViewController.swift */,
+				FA78F4C029CA2C2000DA513F /* Main.storyboard */,
+				FA78F4C329CA2C2300DA513F /* Assets.xcassets */,
+				FA78F4CE29CA35D500DA513F /* Colors.xcassets */,
+				FA78F4C529CA2C2300DA513F /* LaunchScreen.storyboard */,
+				FA78F4C829CA2C2300DA513F /* Info.plist */,
+			);
+			path = "ChatGPT-Swift";
+			sourceTree = "<group>";
+		};
+		FA78F4D029CA3D8B00DA513F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA78F4D129CA3D9F00DA513F /* UIViewExtension.swift */,
+				FACB354029CF92B200AEA8C5 /* UIViewControllerExtension.swift */,
+				FACB354429CFB66F00AEA8C5 /* ServiceManager.swift */,
+				FACB354929CFD2CF00AEA8C5 /* UIButtonExtension.swift */,
+				FACB354B29D0627200AEA8C5 /* UserDefault+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FA78F4D329CA460300DA513F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA78F4D429CCC43800DA513F /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA78F4D429CCC43800DA513F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FA78F4D529CCC4AA00DA513F /* ChatCell.swift */,
+				FA78F4D629CCC4AA00DA513F /* ChatCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FACB353A29CF805100AEA8C5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FACB353C29CF833E00AEA8C5 /* ChatVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FACB353B29CF805C00AEA8C5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FACB353E29CF834E00AEA8C5 /* ChatVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FACB354629CFCC9700AEA8C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FACB354729CFCCB000AEA8C5 /* ChatGptModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA78F4B629CA2C2000DA513F /* ChatGPT-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA78F4CB29CA2C2300DA513F /* Build configuration list for PBXNativeTarget "ChatGPT-Swift" */;
+			buildPhases = (
+				F1DD574DF9C61C80E9B0986D /* [CP] Check Pods Manifest.lock */,
+				FA78F4B329CA2C2000DA513F /* Sources */,
+				FA78F4B429CA2C2000DA513F /* Frameworks */,
+				FA78F4B529CA2C2000DA513F /* Resources */,
+				397CA68535DDF10D1C15D625 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChatGPT-Swift";
+			productName = "ChatGPT-Swift";
+			productReference = FA78F4B729CA2C2000DA513F /* ChatGPT-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA78F4AF29CA2C2000DA513F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FA78F4B629CA2C2000DA513F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = FA78F4B229CA2C2000DA513F /* Build configuration list for PBXProject "ChatGPT-Swift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA78F4AE29CA2C2000DA513F;
+			productRefGroup = FA78F4B829CA2C2000DA513F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA78F4B629CA2C2000DA513F /* ChatGPT-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA78F4B529CA2C2000DA513F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA78F4C729CA2C2300DA513F /* LaunchScreen.storyboard in Resources */,
+				FA78F4CF29CA35D500DA513F /* Colors.xcassets in Resources */,
+				FA78F4D829CCC4AA00DA513F /* ChatCell.xib in Resources */,
+				FA78F4C429CA2C2300DA513F /* Assets.xcassets in Resources */,
+				FA78F4C229CA2C2000DA513F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397CA68535DDF10D1C15D625 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT-Swift/Pods-ChatGPT-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT-Swift/Pods-ChatGPT-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatGPT-Swift/Pods-ChatGPT-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DD574DF9C61C80E9B0986D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatGPT-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA78F4B329CA2C2000DA513F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACB353D29CF833E00AEA8C5 /* ChatVC.swift in Sources */,
+				FACB354A29CFD2CF00AEA8C5 /* UIButtonExtension.swift in Sources */,
+				FACB354C29D0627200AEA8C5 /* UserDefault+Extension.swift in Sources */,
+				FA78F4BF29CA2C2000DA513F /* ViewController.swift in Sources */,
+				FACB353F29CF834E00AEA8C5 /* ChatVM.swift in Sources */,
+				FA78F4BB29CA2C2000DA513F /* AppDelegate.swift in Sources */,
+				FACB354129CF92B200AEA8C5 /* UIViewControllerExtension.swift in Sources */,
+				FA78F4D229CA3D9F00DA513F /* UIViewExtension.swift in Sources */,
+				FA78F4D729CCC4AA00DA513F /* ChatCell.swift in Sources */,
+				FA78F4BD29CA2C2000DA513F /* SceneDelegate.swift in Sources */,
+				FACB354529CFB66F00AEA8C5 /* ServiceManager.swift in Sources */,
+				FACB354829CFCCB000AEA8C5 /* ChatGptModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA78F4C029CA2C2000DA513F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA78F4C129CA2C2000DA513F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA78F4C529CA2C2300DA513F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA78F4C629CA2C2300DA513F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA78F4C929CA2C2300DA513F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA78F4CA29CA2C2300DA513F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA78F4CC29CA2C2300DA513F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B7A31B6236B6BD47B50614 /* Pods-ChatGPT-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5RNXBTNXU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatGPT-Swift/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syedmuhammad07.ChatGPT-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA78F4CD29CA2C2300DA513F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B99030393771D670297CC07 /* Pods-ChatGPT-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5RNXBTNXU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatGPT-Swift/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.syedmuhammad07.ChatGPT-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA78F4B229CA2C2000DA513F /* Build configuration list for PBXProject "ChatGPT-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA78F4C929CA2C2300DA513F /* Debug */,
+				FA78F4CA29CA2C2300DA513F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA78F4CB29CA2C2300DA513F /* Build configuration list for PBXNativeTarget "ChatGPT-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA78F4CC29CA2C2300DA513F /* Debug */,
+				FA78F4CD29CA2C2300DA513F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA78F4AF29CA2C2000DA513F /* Project object */;
+}
